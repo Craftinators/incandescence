@@ -1,0 +1,16 @@
+{
+  "name": "vibrance",
+  "version": "1.0.0",
+  "description": "A typescript translation of the .NET library spectre.console",
+  "main": "dist/index.js",
+  "scripts": {},
+  "author": {
+    "name": "Craftinators",
+    "email": "craftinatorssx@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.5"
+  }
+}
