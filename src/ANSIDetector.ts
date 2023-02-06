@@ -1,9 +1,9 @@
 import { execSync } from "node:child_process";
-import * as process from "node:process"
+import * as process from "node:process";
 import * as os from "node:os";
 
 class ANSIDetector {
-  private constructor() {}
+	private constructor() {}
 
 	private static readonly TERMINAL_PATTERNS: Array<RegExp> = [
 		/^xterm/, // xterm, PuTTY, Mintty
@@ -67,4 +67,4 @@ class ANSIDetector {
 	}
 }
 
-export { ANSIDetector }
+export { ANSIDetector };
