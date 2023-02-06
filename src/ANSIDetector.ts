@@ -3,8 +3,6 @@ import * as process from "node:process";
 import * as os from "node:os";
 
 class ANSIDetector {
-  private constructor() {}
-
   private static readonly TERMINAL_PATTERNS: Array<RegExp> = [
     /^xterm/, // xterm, PuTTY, Mintty
     /^rxvt/, // RXVT
@@ -34,8 +32,7 @@ class ANSIDetector {
 
       const conEmuANSI = process.env["ConEmuANSI"];
       if (conEmuANSI && conEmuANSI.toLowerCase() === "on") return true;
-      if (process.env["ANSICON"]) return true;
-      return false;
+      return !!process.env["ANSICON"];
     }
 
     private static isMinGW(): boolean {

@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "prettier --check src && eslint src --ext .ts --format=pretty",
-    "format": "prettier --write src && eslint src  --ext .ts --fix --format=pretty"
+    "lint": "prettier --check src && eslint src --ext .ts",
+    "format": "prettier --write src && eslint src --ext .ts --fix"
   },
   "author": {
     "name": "Craftinators",
